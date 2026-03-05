@@ -1,73 +1,116 @@
-# Welcome to your Lovable project
+# Financial Dashboard
 
-## Project info
+A modern, feature-rich personal finance management application built with React, TypeScript, and Tailwind CSS. Track expenses, analyze spending patterns, forecast budgets, and get AI-powered financial insights.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **CSV Import**: Seamlessly import bank statements (Indian bank formats supported)
+- **Transaction Management**: View, edit, filter, and categorize transactions
+- **Spending Analytics**: Visualize spending patterns with interactive charts
+- **Budget Management**: Set and track budget limits by category
+- **Forecasting**: AI-powered spending forecasts using ARIMA models
+- **Anomaly Detection**: Get alerts for unusual spending patterns
+- **Smart Suggestions**: Personalized financial recommendations
+- **Health Score**: Overall financial health metrics and indicators
+- **Dark/Light Mode**: Comfortable viewing in any lighting condition
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn-ui with Radix UI
+- **Charts**: Recharts for data visualization
+- **State Management**: React Query (TanStack)
+- **Forms**: React Hook Form with Zod validation
+- **CSV Parsing**: Papa Parse
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v16 or higher)
+- npm or yarn package manager
 
-**Use your preferred IDE**
+## Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Yanshu04/financial-dashboard.git
+   cd financial-dashboard
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+   The app will be available at `http://localhost:8080`
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Available Scripts
 
-# Step 3: Install the necessary dependencies.
-npm i
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+- `npm test` - Run tests
+- `npm run test:watch` - Run tests in watch mode
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── pages/           # Page components
+├── lib/             # Utility functions and helpers
+│   ├── financial-engine.ts    # Core finance calculations
+│   ├── indian-bank-parser.ts  # Bank statement parsing
+│   ├── types.ts               # TypeScript type definitions
+│   └── utils.ts               # Helper utilities
+├── hooks/           # Custom React hooks
+└── main.tsx         # Application entry point
 ```
 
-**Edit a file directly in GitHub**
+## Supported Bank Formats
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Currently supports CSV exports from major Indian banks including:
+- HDFC Bank
+- ICICI Bank
+- Axis Bank
+- SBI
+- And other banks with standard CSV formats
 
-**Use GitHub Codespaces**
+## Development
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To contribute to this project:
 
-## What technologies are used for this project?
+1. Create a feature branch (`git checkout -b feature/amazing-feature`)
+2. Commit your changes (`git commit -m 'Add amazing feature'`)
+3. Push to the branch (`git push origin feature/amazing-feature`)
+4. Open a Pull Request
 
-This project is built with:
+## Performance
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The app is optimized for performance with:
+- Code splitting and lazy loading
+- Efficient state management
+- Optimized re-renders
+- Progressive image loading
 
-## How can I deploy this project?
+## Browser Support
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+MIT License - see LICENSE file for details
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Support
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+For issues and questions, please open an issue on GitHub.
