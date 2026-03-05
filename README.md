@@ -49,7 +49,7 @@ A modern, feature-rich personal finance management application built with React,
    npm run dev
    ```
 
-   The app will be available at `http://localhost:8080`
+   The app will be available at (https://deluxe-fairy-2162f6.netlify.app/)
 
 ## Available Scripts
 
