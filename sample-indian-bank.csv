@@ -1,0 +1,14 @@
+Transaction Date,Description,Debit,Credit,Balance
+01-Mar-2026,NEFT Transfer to John Doe,5000.00,,45000.00
+02-Mar-2026,UPI-Swiggy Food Order,450.50,,44549.50
+02-Mar-2026,Salary Credit,,75000.00,119549.50
+03-Mar-2026,ATM Withdrawal,2000.00,,117549.50
+03-Mar-2026,Amazon Purchase,1299.00,,116250.50
+04-Mar-2026,Electricity Bill Payment,1850.00,,114400.50
+05-Mar-2026,UPI-Uber Ride,235.00,,114165.50
+05-Mar-2026,Grocery Store,3450.00,,110715.50
+06-Mar-2026,Netflix Subscription,799.00,,109916.50
+07-Mar-2026,Fuel Payment,2100.00,,107816.50
+08-Mar-2026,Restaurant Bill,1250.00,,106566.50
+09-Mar-2026,Medical Store,850.00,,105716.50
+10-Mar-2026,Gym Membership,1500.00,,104216.50
